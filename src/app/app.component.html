@@ -1,0 +1,5 @@
+
+      <p *ngIf="windowState=='default'">Window is in minimized state</p>
+      <kendo-window [top]="100" [left]="70" title="My Window" [(state)]="windowState" *ngIf="opened" (close)="openClose(false)">
+        <p style="text-align: center;">The window is maximized now</p>
+      </kendo-window>
